@@ -1,0 +1,105 @@
+# TrialWeapons Configuration - 1.12.2 Backport of 1.21 content
+
+mace:
+  base-damage: 6.0
+  attack-speed-multiplier: 0.6
+  durability: 500
+  smash:
+    min-fall-distance: 1.5
+    tier1-blocks: 3
+    tier1-damage-per-block: 4.0
+    tier2-blocks: 5
+    tier2-damage-per-block: 2.0
+    tier3-damage-per-block: 1.0
+  knockback-radius: 2.5
+  knockback-strength: 1.2
+  cancel-fall-damage: true
+
+spear:
+  base-damage:
+    iron: 7.0
+    diamond: 9.0
+    netherite: 11.0
+  charge-multiplier:
+    iron: 1.3
+    diamond: 1.5
+    netherite: 1.7
+  min-charge-speed: 0.35
+  durability:
+    iron: 250
+    diamond: 1561
+    netherite: 2031
+
+wind-charge:
+  damage: 1.0
+  launch-strength: 1.35
+  radius: 2.5
+  cooldown-ticks: 10
+  particle-count: 40
+
+breeze:
+  health: 30.0
+  damage: 4.0
+  shoot-cooldown-ticks: 40
+  jump-strength: 0.7
+  spawn-chance: 0.08
+  spawn-biomes:
+    - PLAINS
+    - DESERT
+    - SAVANNA
+    - MESA
+  drop-breeze-rod-chance: 0.85
+  drop-breeze-rod-min: 1
+  drop-breeze-rod-max: 2
+
+bogged:
+  health: 20.0
+  spawn-chance: 0.12
+  spawn-biomes:
+    - SWAMPLAND
+    - MUTATED_SWAMPLAND
+  poison-duration-ticks: 100
+  poison-amplifier: 0
+  drop-vines-chance: 0.6
+
+trial-spawner:
+  activation-range: 12
+  wave-count: 3
+  mobs-per-wave: 4
+  time-between-waves-ticks: 100
+  lock-radius: 15
+  reward-min: 2
+  reward-max: 5
+  possible-rewards:
+    - DIAMOND:3
+    - EMERALD:6
+    - BREEZE_ROD:2
+    - MACE:1
+    - TRIAL_KEY:1
+
+vault:
+  require-key: true
+  min-loot: 2
+  max-loot: 4
+  possible-loot:
+    - MACE:1
+    - SPEAR_DIAMOND:1
+    - SPEAR_NETHERITE:1
+    - DIAMOND:8
+    - EMERALD:12
+    - TOTEM:1
+    - GOLDEN_APPLE:3
+    - ENCHANTED_GOLDEN_APPLE:1
+
+messages:
+  prefix: "&8[&bTrialWeapons&8] &r"
+  no-permission: "&cYou don't have permission."
+  given: "&aGiven you &e%item%&a."
+  reloaded: "&aConfig reloaded."
+  unknown-item: "&cUnknown item. Available: mace, spear_iron, spear_diamond, spear_netherite, wind_charge, breeze_rod, heavy_core, trial_key"
+  trial-spawner-activated: "&6Trial Spawner activated! Survive the waves!"
+  trial-spawner-wave: "&eWave %wave%/%total% incoming!"
+  trial-spawner-complete: "&aTrial complete! Collect your rewards."
+  vault-locked: "&cThis Vault requires a &eTrial Key&c!"
+  vault-opened: "&aVault unlocked! Loot obtained."
+  recipes-header: "&8&m----------&r &bTrialWeapons Recipes &8&m----------"
